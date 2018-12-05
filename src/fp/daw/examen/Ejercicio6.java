@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Random;
+
 public class Ejercicio6 {
 
 	/* 
@@ -14,8 +16,25 @@ public class Ejercicio6 {
 	 */
 		
 	public static void main(String[] args) {
-		
+		Random r = new Random();
+		int longitud = r.nextInt(400)+100;
+		int[] array = new int[longitud];
 
+		for(int i=0; i<longitud; i++) {
+			array[i] = r.nextInt(1000000);
+		}
+		
+		int menor_dif = 1000000;
+		int resta;
+		for (int i=1;i<longitud; i++) {
+			resta = array[i] - array[i-1];
+			resta = Math.abs(resta);
+			if(resta < menor_dif) {
+				menor_dif = resta;
+			}
+		}
+		
+		System.out.println("Menor diferencia entre dos numeros: "+ (menor_dif));
 	}
 
 }

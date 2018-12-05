@@ -13,7 +13,10 @@ public class Ejercicio1 {
 	 * uso de variables booleanas.
 	 */
 	
-	public static ...
+	public static boolean contiene(String[] array, String cadena) {
+		return true;
+		
+	}
 	
 	/*
 	 * 0,25 puntos
@@ -24,7 +27,5 @@ public class Ejercicio1 {
 	
 	public static void main(String[] args) {
 		
-
 	}
-
 }
