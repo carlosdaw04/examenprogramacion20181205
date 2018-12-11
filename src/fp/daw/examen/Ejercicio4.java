@@ -1,5 +1,6 @@
 package fp.daw.examen;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Ejercicio4 {
@@ -26,7 +27,9 @@ public class Ejercicio4 {
 				}
 			}
 		}
+//		Arrays.sort(vector);
 		return vector;
+		
 	}
 	
 	/*

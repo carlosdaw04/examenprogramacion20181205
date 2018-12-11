@@ -11,6 +11,8 @@ public class Ejercicio2 {
 	 * contenga los mismos caracteres que ésta y en el mismo orden. 
 	 */
 	
+	/*No es necesario,existe un metodo en la clase String*/
+	
 	public static char[] stringToArray(String cadena) {
 		char[]array = new char[cadena.length()];
 		
@@ -19,6 +21,8 @@ public class Ejercicio2 {
 		}
 		
 		return array;
+		
+//		return cadena.toCharArray();
 	}
 	
 	
@@ -30,7 +34,11 @@ public class Ejercicio2 {
 	 */
 	
 	public static void main(String[] args) {
+		char[] array = stringToArray("Vector");
 		
+		for(int i=0; i<array.length; i++) {
+			System.out.print(array[i]);
+		}
 	}
 
 }

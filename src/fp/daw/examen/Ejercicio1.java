@@ -13,9 +13,20 @@ public class Ejercicio1 {
 	 * uso de variables booleanas.
 	 */
 	
-	public static boolean contiene(String[] array, String cadena) {
-		return true;
+	public static boolean contiene(String[] vector, String cadena) {
+//		for (int i = 0; i<vector.length; i++) {
+//			if (cadena.equals(vector[i])) {
+//				return true;
+//			}
+//		}
+//		return false;
 		
+		int i=0;
+		while(i<vector.length && !cadena.equals(vector[i])) {
+			i++;
+		}
+		
+		return i<vector.length;
 	}
 	
 	/*
@@ -26,6 +37,7 @@ public class Ejercicio1 {
 	 */
 	
 	public static void main(String[] args) {
-		
+		String [] vector = {"C1", "C2", "C3", "C4"};
+		System.out.println(contiene(vector, "C4"));
 	}
 }
