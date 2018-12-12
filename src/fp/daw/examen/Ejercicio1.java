@@ -12,32 +12,19 @@ public class Ejercicio1 {
 	 * El método incluirá una única sentencia 'return' y no está permitido el
 	 * uso de variables booleanas.
 	 */
-	
-	public static boolean contiene(String[] vector, String cadena) {
-//		for (int i = 0; i<vector.length; i++) {
-//			if (cadena.equals(vector[i])) {
-//				return true;
-//			}
-//		}
-//		return false;
-		
-		int i=0;
-		while(i<vector.length && !cadena.equals(vector[i])) {
-			i++;
-		}
-		
-		return i<vector.length;
+//	for (int i = 0; i<vector.length; i++) {						//Esta seria la forma de hacerlo con un bucle for y valores booleanos (true y false). A parte de esto tmapoco seria valida porque utiliza dos returns
+//	if (cadena.equals(vector[i])) {
+//		return true;
+//	}
+//}
+//return false;
+
+	public static boolean contiene(String [] vector, String cadena) { //Entender la definicion de metodos //En la otra parte estamos declarando los parametros en este caso un vecor y una cadena de caracteres
+	int i = 0;//Declaramos la i para poeder darle una variable al vector
+	while(i<vector.length && !cadena.equals(vector[i])) { //Revisar estructura de bucles while //En este caso creo que dice que mientras i sea menor que que la longitud del vector && la cadena no sea igual al vector[i] entonces i amunete en 1 unidad
+		i++; //Cuando se cumple la condicion del while el contenido del vector en este caso i aumneta en una unidad.
 	}
+	return i<vector.length; //No entiendo porque tiene que retornar esto.
 	
-	/*
-	 * 0,25 puntos
-	 * 
-	 * Escribe en el método main las sentencias necesarias para poner a prueba
-	 * el método 'contiene' mostrando por pantalla el resultado de su ejecución. 
-	 */
-	
-	public static void main(String[] args) {
-		String [] vector = {"C1", "C2", "C3", "C4"};
-		System.out.println(contiene(vector, "C4"));
 	}
 }
